@@ -72,13 +72,13 @@
         .addTo(map); //add marker to map
 
       var options = {
-        units: 'miles'
+        units: 'kilometers'
       }; // units can be degrees, radians, miles, or kilometers, just be sure to change the units in the text box to match. 
 
       var distance = turf.distance(to, from, options);
 
       var value = document.getElementById('map-overlay')
-      value.innerHTML = "Distance: " + distance.toFixed([2]) + " miles"
+      value.innerHTML = "Distance: " + distance.toFixed([2]) + " kms"
 
     </script>
   </body>
